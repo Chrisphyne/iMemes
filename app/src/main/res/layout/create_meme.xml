@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateMeme">
+
+    <RelativeLayout
+        android:id="@+id/cmTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#fb6e52">
+
+        <Button
+            android:id="@+id/cmBackButt"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back_butt" />
+
+        <Button
+            android:id="@+id/cmShareButt"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/share_butt" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="Create Meme"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/topEditTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cropView"
+         android:layout_alignStart="@+id/cropView"
+        android:layout_below="@+id/cmTopLayout"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:layout_marginTop="50dp"
+        android:hint="TYPE TOP TEXT HERE"
+        android:inputType="textCapCharacters"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/cropView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/topEditTxt"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/memeImg"
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:layout_alignEnd="@+id/bottomTxt"
+            android:layout_alignStart="@+id/bottomTxt"
+            android:scaleType="centerCrop"
+            android:src="@drawable/m3" />
+
+        <TextView
+            android:id="@+id/topTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/memeImg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:shadowColor="@color/textShadow"
+            android:shadowDx="0"
+            android:shadowDy="3"
+            android:shadowRadius="2"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bottomTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/memeImg"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:shadowColor="@color/textShadow"
+            android:shadowDx="0"
+            android:shadowDy="3"
+            android:shadowRadius="2"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomEditTxt"
+        android:hint="TYPE BOTTOM TEXT HERE"
+        android:layout_below="@+id/cropView"
+        android:inputType="textCapCharacters"
+        android:textStyle="bold"
+        android:background="@null"
+
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/cropView"
+        android:layout_alignStart="@+id/cropView"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shareImg"
+        android:visibility="invisible"
+        android:layout_below="@+id/bottomEditTxt"
+        android:layout_alignStart="@+id/bottomEditTxt" />
+
+</RelativeLayout>

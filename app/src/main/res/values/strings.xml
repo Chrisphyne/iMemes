@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">iMemes</string>
+
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN BANNER UNIT ID YOU'LL GET FROM http://apps.admob.com -->
+    <string name="ADMOB_BANNER_UNIT_ID">ca-app-pub-9733347540588953/6212011222</string>
+
+
+</resources>
