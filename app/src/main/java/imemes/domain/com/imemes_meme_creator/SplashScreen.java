@@ -1,4 +1,4 @@
-package imemes.domain.com.imemes;
+package imemes.domain.com.imemes_meme_creator;
 
 /*------------------------------
 

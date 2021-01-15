@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
     defaultConfig {
-        applicationId "imemes.domain.com.imemes"
+        applicationId "imemes_meme_creator.domain.com.imemes_meme_creator"
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -26,12 +26,16 @@ android {
 }
 
 dependencies {
+    def billing_version = "3.0.0"
+    implementation "com.android.billingclient:billing:$billing_version"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.google.android.gms:play-services:+'
+    //noinspection GradleCompatible
     implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //noinspection GradleCompatible
     implementation 'com.android.support:cardview-v7:28.0.0'
 }

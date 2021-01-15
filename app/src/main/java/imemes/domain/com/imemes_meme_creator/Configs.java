@@ -1,4 +1,4 @@
-package imemes.domain.com.imemes;
+package imemes.domain.com.imemes_meme_creator;
 
 /*------------------------------
 
@@ -9,11 +9,8 @@ package imemes.domain.com.imemes;
 
 --------------------------------*/
 
-import android.app.Activity;
 import android.app.Application;
 import android.graphics.Bitmap;
-import android.os.Bundle;
-
 
 
 public class Configs extends Application {

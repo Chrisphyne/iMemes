@@ -1,4 +1,4 @@
-package imemes.domain.com.imemes;
+package imemes.domain.com.imemes_meme_creator;
 
 /*------------------------------
 
@@ -11,8 +11,6 @@ package imemes.domain.com.imemes;
 
 import android.Manifest;
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
