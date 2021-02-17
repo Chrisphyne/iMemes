@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "imemes.domain.com.imemes_meme_creator",
+  "variantName": "processReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 5,
+      "versionName": "1.4",
+      "outputFile": "app-release.apk"
+    }
+  ]
+}
